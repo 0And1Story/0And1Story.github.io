@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* highlight.js的设置 */
+code {
+	font-family: Consolas;
+	tab-size: 4;
+}
+
+.hljs {
+	background-color: rgba(255,255,255,0.70);
+	text-indent: 1cm;
+	border-style: solid;
+	border-color: rgba(146,146,146,0.50);
+	border-width: thick;
+}
+
+pre {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+
+/* 文章版面设置 */
+#content #mainContent #article {
+	/* Author info section */
+	background-color: rgba(255,255,255,0.70);
+	border-radius: 5px;
+}
+
+#content #mainContent #article p {
+	color: rgba(0,0,0,1.00);
+	padding-left: 2%;
+	font-family: yahei;
+	font-weight: 400;
+	font-size: 120%;
+}
+
+
+/* 文章列表版面设置 */
+#article-list aside {
+	border-radius: 5px;
+}
+
+
+/* 使用类似markdown的html格式对象 */
+/* 6种标题 */
+.h1 {
+	font-size: 28px;
+}
+
+.h2 {
+	font-size: 24px;
+}
+
+.h3 {
+	font-size: 20px;
+}
+
+.h4 {
+	font-size: 28px;
+}
+
+.h5 {
+	font-size: 24px;
+}
+
+.h6 {
+	font-size: 16px;
+}
+
+/* 删除线 */
+.del {
+	text-decoration: line-through;
+}
+
+/* 粗体 */
+.bold {
+	font-weight: bold;
+}
