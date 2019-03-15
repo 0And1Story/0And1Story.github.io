@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #mainwrapper header {
 	/*Header */
-	background-color: rgba(255,255,255,0.70);
+	background-color: rgba(255,255,255,0.00);
 	overflow: auto;
 	font-family: montserrat, sans-serif;
 	font-style: normal;
@@ -19,8 +19,13 @@
 }
 #mainwrapper header #logo a {
 	/* Company Logo text */
-	color: rgba(15,120,217,1.00);
+	color: rgba(15,120,217,0.50);
 	text-decoration: none;
+	transition: 0.5s;
+}
+
+#mainwrapper header #logo a:hover {
+	color: rgba(15,120,217,1.00);
 }
 #mainwrapper header nav {
 	/*Nav bar containing links in header */
@@ -36,7 +41,12 @@
 header nav a {
 	/* Links in header */
 	padding-right: 2%;
-	color: rgba(15,120,217,1.00);
+	color: rgba(255,255,255,0.50);
+	text-decoration: none;
+	transition: 0.5s;
+}
+header nav a:hover {
+	color: rgba(255,255,255,1.00);
 }
 #content #mainContent h1 {
 	/* Styling for main headings */
@@ -91,6 +101,10 @@ header nav a {
 #content #mainContent #authorInfo p a {
 	color: rgba(15,120,255,1.00);
 	text-decoration: underline;
+	transition: 0.5s;
+}
+#content #mainContent #authorInfo p a:hover {
+	color: rgba(23,101,159,1.00);
 }
 footer article {
 	/* Footer articles */
@@ -163,13 +177,17 @@ nav ul {
 nav ul li a {
 	color: rgba(15,120,217,1.00);
 	text-decoration: none;
+	transition: 0.5s;
+}
+nav ul li a:hover {
+	color: rgba(23,101,159,1.00);
 }
 #footerbar {
 	/* Footer bar at the bottom of the page */
 	height: 18px;
 	clear: both;
 	background-color: rgba(208,207,207,0.00);
-	color: rgba(146,146,146,1.00);
+	color: rgba(255,255,255,1.00);
 	text-align: center;
 	width: 100%;
 }
@@ -191,11 +209,6 @@ footer {
 	/* Image in sidebar */
 	width: 100%;
 	float: left;
-}
-#mainwrapper header nav a {
-	/* Links in header */
-	color: rgba(146,146,146,1.00);
-	text-decoration: none;
 }
 
 /* Tablet view */
@@ -323,9 +336,6 @@ body {
 	background-attachment: fixed;
 	background-size: cover
 }
-#mainwrapper header nav a {
-	color: rgba(15,120,217,1.00);
-}
 
 #content #mainContent #article-list aside {
 	background-color: rgba(255,255,255,0.70);
@@ -336,9 +346,4 @@ body {
 #content #mainContent #article-list aside h3,
 #content #mainContent #article-list aside p {
 	text-indent: 1cm;
-}
-#content #mainContent #article-list aside ul h2 li a {
-	text-decoration: none;
-	color: rgba(15,120,217,1.00);
-	font-weight: bold;
 }

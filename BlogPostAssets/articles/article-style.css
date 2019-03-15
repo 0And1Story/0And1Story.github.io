@@ -42,6 +42,16 @@ pre {
 	border-radius: 5px;
 }
 
+#article-list aside ul h2 li a {
+	text-decoration: none;
+	color: rgba(15,120,217,1.00);
+	font-weight: bold;
+	transition: 0.5s;
+}
+#article-list aside ul h2 li a:hover {
+	color: rgba(23,101,159,1.00);
+}
+
 
 /* 使用类似markdown的html格式对象 */
 /* 6种标题 */
