@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>0And1Story Blog - 快读</title>
+<title>快读 - 0And1Story Blog</title>
 <link href="../styles/blogPostStyle.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/atom-one-light.css">
 <link href="article-style.css" rel="stylesheet" type="text/css">
@@ -49,8 +49,9 @@
 #include &lt;cctype&gt;
 
 namespace fastio {
+    /* Fast In Stream Module */
     class FastIn {
-    public:
+    private:
         template&lt;typename T&gt;
         inline void readSingle(T&amp; x) {
             x = 0;
@@ -66,7 +67,7 @@ namespace fastio {
                 ch = getchar();
             x *= f;
         }
-
+    public:
         template&lt;typename T&gt;
         FastIn&amp; operator&gt;&gt;(T&amp; x) {
             readSingle(x);
@@ -74,11 +75,61 @@ namespace fastio {
         }
     };
 
-    FastIn fastin;
+
+    /* Fast Out Stream Module */
+    class FastOut
+    {
+    private:
+        inline void writeSingle(int x) {
+            printf("%d", x);
+        }
+
+        inline void writeSingle(long long x) {
+            printf("%lld", x);
+        }
+
+        inline void writeSingle(char ch) {
+            printf("%c", ch);
+        }
+
+        inline void writeSingle(char* str) {
+            printf("%s", str);
+        }
+
+        inline void writeSingle(const char* str) {
+            printf("%s", str);
+        }
+
+        inline void writeSingle(string str) {
+            char* buffer = new char[str.size() + 1];
+            for (register int i = 0; i &lt; str.size(); i ++)
+                buffer[i] = str[i];
+            buffer[str.size()] = 0;
+            printf("%s", buffer);
+            delete buffer;
+        }
+
+        template&lt;typename T&gt;
+        inline void writeSingle(vector&lt;T&gt; v) {
+            for (register int i = 0; i &lt; v.size(); i ++)
+                writeSingle(v[i]),
+                writeSingle(" ");
+            writeSingle("\n");
+        }
+    public:
+        template&lt;typename T&gt;
+        FastOut&amp; operator&lt;&lt;(T x) {
+            writeSingle(x);
+            return *this;
+        }
+    };
+
+    /* Instantiation of Standard FastIn and FastOut stream */
+    FastIn  fastin;
+    FastOut fastout;
 }
 
 #endif
-
 </code>
 </pre>
 <p></p>
@@ -125,7 +176,7 @@ int main()
       </article>
     </footer>
   </div>
-  <div id="footerbar"><!-- Small footerbar at the bottom --></div>
+  <script src="../js/footerbar.js"></script>
 </div>
 <script src="https://highlightjs.org/static/highlight.site.pack.js"></script> 
 <script>hljs.initHighlightingOnLoad();</script>

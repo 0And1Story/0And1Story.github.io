@@ -1,0 +1,1 @@
+document.write('<div id="footerbar">Copyright &copy; 2019 | Powered by 0And1Story<!-- Small footerbar at the bottom --></div>');
