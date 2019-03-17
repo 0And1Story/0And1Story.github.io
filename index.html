@@ -37,6 +37,20 @@
       <script src="BlogPostAssets/js/author-info.js"></script>
     </section>
     <script src="BlogPostAssets/js/sidebar-index.js"></script>
+    <section id="hitokoto"></section>
+    <script>
+      fetch('https://v1.hitokoto.cn/?c=a')
+        .then(function(res) {
+          return res.json();
+        })
+        .then(function(data) {
+          var hitokoto = document.getElementById('hitokoto');
+          hitokoto.innerHTML = '<h2>一言 ヒトコト</h2><p>' + data.hitokoto + '</p><p class="hitokoto-from">——' + data.from + '</p>';
+        })
+        .catch(function(err) {
+          console.error(err);
+        })
+    </script>
     <footer> 
       <!--************************************************************************
     Footer starts here

@@ -409,3 +409,18 @@ body {
 #content #mainContent #article-list aside p {
 	text-indent: 1cm;
 }
+#hitokoto {
+	width: 19%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+	background-color: rgba(255,255,255,0.70);
+	margin-top: 30px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-radius: 5px;
+}
+.hitokoto-from {
+	text-align: right;
+	font-size: 95%;
+}
