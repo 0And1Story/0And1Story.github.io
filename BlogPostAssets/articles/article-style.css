@@ -27,7 +27,6 @@ pre {
 	background-color: rgba(255,255,255,0.70);
 	border-radius: 5px;
 }
-
 #content #mainContent #article p {
 	color: rgba(0,0,0,1.00);
 	padding-left: 2%;
@@ -56,27 +55,22 @@ pre {
 /* 使用类似markdown的html格式对象 */
 /* 6种标题 */
 .h1 {
-	font-size: 28px;
+	font-size: 28px !important;
 }
-
 .h2 {
-	font-size: 24px;
+	font-size: 24px !important;
 }
-
 .h3 {
-	font-size: 20px;
+	font-size: 20px !important;
 }
-
 .h4 {
-	font-size: 28px;
+	font-size: 28px !important;
 }
-
 .h5 {
-	font-size: 24px;
+	font-size: 24px !important;
 }
-
 .h6 {
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 /* 删除线 */
@@ -87,4 +81,60 @@ pre {
 /* 粗体 */
 .bold {
 	font-weight: bold;
+}
+
+/* 颜色对象 */
+.aqua {
+	color: aqua !important;
+}
+.black {
+	color: black !important;
+}
+.blue {
+	color: blue !important;
+}
+.fuchsia {
+	color: fuchsia !important;
+}
+.gray {
+	color: gray !important;
+}
+.green {
+	color: green !important;
+}
+.lime {
+	color: lime !important;
+}
+.maroon {
+	color: maroon !important;
+}
+.navy {
+	color: navy !important;
+}
+.olive {
+	color: olive !important;
+}
+.orange {
+	color: orange !important;
+}
+.purple {
+	color: purple !important;
+}
+.red {
+	color: red !important;
+}
+.silver {
+	color: silver !important;
+}
+.teal {
+	color: teal !important;
+}
+.white {
+	color: white !important;
+}
+.yellow {
+	color: yellow !important;
+}
+.lightblue {
+	color: rgba(15,120,217,1.00) !important;
 }
