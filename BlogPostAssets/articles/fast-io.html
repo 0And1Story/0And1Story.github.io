@@ -14,6 +14,8 @@
 	<img src="BlogPostAssets/images/68751597_p0.png" height="auto" width="100%"/>
 </div>-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<textarea id="copy-buffer" style="opacity: 0;width: 0px;height: 0px;"></textarea>
+<script src="../js/copy-code.js"></script>
 </head>
 
 <body>
@@ -43,6 +45,7 @@
 <p>今天写了一个不错的<span class="bold lightblue h2">快读</span>，跟大家分享。</p>
 <p>废话不多说，代码如下：</p>
 <pre>
+<button onClick="copyCode(0)"><i class="far fa-copy"></i>&nbsp;复制代码</button>
 <code class="cpp">
 #ifndef _FASTIO_H_
 #define _FASTIO_H_
@@ -137,6 +140,7 @@ namespace fastio {
 <p></p>
 <p>使用方法如下：</p>
 <pre>
+<button onClick="copyCode(1)"><i class="far fa-copy"></i>&nbsp;复制代码</button>
 <code class="cpp">
 #include &lt;cstdio&gt;
 #include "fastio.h"

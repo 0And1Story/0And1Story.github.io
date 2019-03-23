@@ -20,6 +20,22 @@ pre {
 	padding-right: 2%;
 }
 
+/* 复制按钮样式 */
+button {
+	background-color: rgba(15,120,217,1.00);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	left: 2px;
+	transition: 0.5s;
+}
+button:hover {
+	background-color: rgba(58,158,229,1.00);
+}
+button:focus {
+	outline: none;
+}
 
 /* 文章版面设置 */
 #content #mainContent #article {
