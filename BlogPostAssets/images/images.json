@@ -1,23 +1,25 @@
-Images: {
-	background: {
-		Description: "Background Image",
-		Format: "JPEG",
-		Position: "body",
-		URL: "https://s1.ax1x.com/2018/02/25/9w99XR.jpg",
-		LocalPath: "BlogPostAssets/images/background.jpg"
-	},
-	adimage: {
-		Description: "Ad Image",
-		Format: "JPEG",
-		Position: "#sidebar",
-		URL: "https://s2.ax1x.com/2019/03/09/ApuQds.jpg",
-		LocalPath: "BlogPostAssets/images/adimage.jpg"
-	},
-	banner_image: {
-		Description: "Banner Image",
-		Format: "PNG",
-		Position: "#bannerImage",
-		URL: "https://s2.ax1x.com/2019/03/09/ApZa5V.png",
-		LocalPath: "BlogPostAssets/images/banner_image.png"
+{
+	"Images": {
+		"background": {
+			"Description": "Background Image",
+			"Format": "JPEG",
+			"Position": "body",
+			"URL": "https://s1.ax1x.com/2018/02/25/9w99XR.jpg",
+			"LocalPath": "BlogPostAssets/images/background.jpg"
+		},
+		"adimage": {
+			"Description": "Ad Image",
+			"Format": "JPEG",
+			"Position": "#sidebar",
+			"URL": "https://s2.ax1x.com/2019/03/09/ApuQds.jpg",
+			"LocalPath": "BlogPostAssets/images/adimage.jpg"
+		},
+		"banner_image": {
+			"Description": "Banner Image",
+			"Format": "PNG",
+			"Position": "#bannerImage",
+			"URL": "https://s2.ax1x.com/2019/03/09/ApZa5V.png",
+			"LocalPath": "BlogPostAssets/images/banner_image.png"
+		}
 	}
 }
