@@ -1,1 +1,1 @@
-document.write('<div id="footerbar">Copyright &copy; 2019 | Powered by 0And1Story | Published on <a href="https://github.com/0And1Story/0And1Story.github.io" title="This Project on GitHub" target="_blank">GitHub</a></div>');
+document.write('<div id="footerbar">Copyright &copy; 2019 | Developed by 0And1Story | Published on <a href="https://github.com/0And1Story/0And1Story.github.io" title="This Project on GitHub" target="_blank">GitHub</a></div>');
