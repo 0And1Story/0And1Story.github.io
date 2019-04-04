@@ -1,4 +1,13 @@
 @charset "UTF-8";
+body {
+	background-color: #FFF;
+	/* background-image: url(../images/background.jpg); */
+	background-image: url(https://s1.ax1x.com/2018/02/25/9w99XR.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-attachment: fixed;
+	background-size: cover
+}
 #mainwrapper header {
 	/*Header */
 	background-color: rgba(255,255,255,0.00);
@@ -235,6 +244,62 @@ nav ul li a {
 nav ul li a:hover {
 	color: rgba(45,183,139,1.00);
 }
+#hitokoto {
+	width: 19%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+	background-color: rgba(255,255,255,0.70);
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 5px;
+}
+#hitokoto .hitokoto-title {
+	text-align: left;
+}
+#hitokoto .hitokoto-text {
+	text-align: center;
+	transition: 0.5s;
+}
+#hitokoto .hitokoto-from {
+	text-align: right;
+	font-size: 95%;
+	color: dimgray;
+	transition: 0.5s;
+}
+#hitokoto .hitokoto-change {
+	background-color: rgba(15,120,217,1.00);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	left: 2px;
+	transition: 0.5s;
+	float: right;
+	margin-top: 3%;
+}
+#hitokoto .hitokoto-change:hover {
+	background-color: rgba(58,158,229,1.00);
+}
+#hitokoto .hitokoto-change:focus {
+	outline: none;
+}
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+#hitokoto .hitokoto-change i:before {
+	display: inline-block;
+	transition: 0.5s;
+}
+#hitokoto .hitokoto-change:hover i:before {
+	animation: rotating 1.2s linear infinite;
+}
 #footerbar {
 	/* Footer bar at the bottom of the page */
 	height: auto;
@@ -388,39 +453,10 @@ footer {
 	/* Each foter article */
 	width: 96%;
 }
+#hitokoto {
+	width: 92%;
+	float: none;
+	margin-left: 2%;
 }
-body {
-	background-color: #FFF;
-	/* background-image: url(../images/background.jpg); */
-	background-image: url(https://s1.ax1x.com/2018/02/25/9w99XR.jpg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-attachment: fixed;
-	background-size: cover
 }
 
-#content #mainContent #article-list aside {
-	background-color: rgba(255,255,255,0.70);
-}
-#content #mainContent #article-list aside p {
-	color: rgba(22,86,185,1.00);
-}
-#content #mainContent #article-list aside h3,
-#content #mainContent #article-list aside p {
-	text-indent: 1cm;
-}
-#hitokoto {
-	width: 19%;
-	padding-left: 2%;
-	padding-right: 2%;
-	float: left;
-	background-color: rgba(255,255,255,0.70);
-	margin-top: 30px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	border-radius: 5px;
-}
-.hitokoto-from {
-	text-align: right;
-	font-size: 95%;
-}

@@ -11,8 +11,15 @@ function copyCode(self) {
 		self.removeAttribute('style');
 	}, 500);
 }
+
 function initCopyButton() {
-	var buttons=document.getElementsByClassName('copy-button');
-	for (var i = 0; i < buttons.length; i ++)
-		buttons[i].setAttribute('onClick', 'copyCode(this)');
+	window.onload = function() {
+		var buttons=document.getElementsByClassName('copy-button');
+		for (var i = 0; i < buttons.length; i ++) {
+			buttons[i].setAttribute('onClick', 'copyCode(this)');
+			buttons[i].innerHTML = '<i class="far fa-copy"></i>&nbsp;复制代码';
+		}
+	}
 }
+
+initCopyButton();
