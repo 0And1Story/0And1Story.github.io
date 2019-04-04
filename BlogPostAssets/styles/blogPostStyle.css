@@ -336,6 +336,16 @@ footer {
 	width: 100%;
 	float: left;
 }
+.scroll-line {
+	height: 3px;
+	width: 0%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(44,217,102,1.00);
+	position: fixed;
+	z-index: 6;
+	transition: 1.0s;
+}
 
 /* Tablet view */
 @media screen and (max-width:769px) {
