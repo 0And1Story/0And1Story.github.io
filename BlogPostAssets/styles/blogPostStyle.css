@@ -410,6 +410,11 @@ footer {
 	/* Header */
 	width: 100%;
 }
+#hitokoto {
+	width: 92%;
+	float: none;
+	margin-left: 2%;
+}
 }
 
 /* Mobile view */
