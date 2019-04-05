@@ -13,13 +13,9 @@ function copyCode(self) {
 }
 
 function initCopyButton() {
-	window.onload = function() {
-		var buttons=document.getElementsByClassName('copy-button');
-		for (var i = 0; i < buttons.length; i ++) {
-			buttons[i].setAttribute('onClick', 'copyCode(this)');
-			buttons[i].innerHTML = '<i class="far fa-copy"></i>&nbsp;复制代码';
-		}
+	var buttons=document.getElementsByClassName('copy-button');
+	for (var i = 0; i < buttons.length; i ++) {
+		buttons[i].setAttribute('onClick', 'copyCode(this)');
+		buttons[i].innerHTML = '<i class="far fa-copy"></i>&nbsp;复制代码';
 	}
 }
-
-initCopyButton();

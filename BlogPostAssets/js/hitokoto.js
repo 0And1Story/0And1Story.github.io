@@ -41,5 +41,3 @@ function updateHitokoto() {
 		  	console.error(err);
 		});
 }
-
-window.onload = initHitokoto;

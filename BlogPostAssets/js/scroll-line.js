@@ -6,3 +6,7 @@ window.onscroll = function() {
 	var scrollLine = document.getElementsByClassName('scroll-line')[0];
 	scrollLine.setAttribute('style', 'width: ' + scrollLen + '%;');
 };
+
+function initScrollLine() {
+	document.body.innerHTML = '<div class="scroll-line"></div>\n' + document.body.innerHTML;
+}
