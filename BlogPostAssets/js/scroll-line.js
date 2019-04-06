@@ -10,6 +10,5 @@ function updateScrollLine() {
 function initScrollLine() {
 	document.body.innerHTML = '<div class="scroll-line"></div>\n' + document.body.innerHTML;
 	updateScrollLine();
+	window.onscroll = updateScrollLine;
 }
-
-window.onscroll = updateScrollLine;
