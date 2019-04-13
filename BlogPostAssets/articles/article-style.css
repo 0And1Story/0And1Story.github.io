@@ -44,7 +44,7 @@ button:focus {
 #content #mainContent #article p {
 	color: rgba(0,0,0,1.00);
 	padding-left: 2%;
-	font-family: yahei;
+	font-family: '微软雅黑';
 	font-weight: 400;
 	font-size: 120%;
 }
