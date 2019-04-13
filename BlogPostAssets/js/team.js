@@ -11,8 +11,13 @@ function getTeamInfo(teamname) {
 	return info;
 }
 
-function getTeamHtml(teamname, teamid) {
-	var info = getTeamInfo(teamname);
+function getTeamHtml(teamname, teamid, type='', json='') {
+	var info;
+	if (type === 'JSON') {
+		info = JSON.parse(json);
+	} else {
+		info = getTeamInfo(teamname);
+	}
 	var html = '';
 	html += '<a href="https://www.luogu.org/team/show?teamid=' + teamid + '" target="_blank"><h3>洛谷团队页面</h3></a>';
 	
