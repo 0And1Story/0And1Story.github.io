@@ -15,6 +15,7 @@ document.write('\
       <div class="popup-button">\
         <i class="fas fa-pen-square"></i>&nbsp;文章<br><i class="fas fa-angle-down"></i>\
         <a href="./BlogPostAssets/articles/article-list.html" title="Article"><div class="popup-item"><i class="fas fa-globe-asia"></i>&nbsp;所有文章</div></a>\
+		<a href="./BlogPostAssets/articles/team-list.html" title="Team"><div class="popup-item"><i class="fas fa-users"></i>&nbsp;团队列表</div></a>\
         <a href="#" title="信息学奥赛"><div class="popup-item"><i class="fas fa-code"></i>&nbsp;OI</div></a>\
       </div>\
     </nav>\

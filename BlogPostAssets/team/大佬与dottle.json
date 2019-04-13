@@ -1,0 +1,77 @@
+{
+	"Declaration": "暂无",
+	"Notice": "暂无",
+	"Homework": [
+		"木有符合要求的作业"
+	],
+	"Problem": [
+		"木有符合要求的题目"
+	],
+	"Contest": [
+		"木有符合要求的比赛"
+	],
+	"Member": {
+		"大佬":[
+			{
+				"username":"Max__HE",
+				"realname":"dalao 好",
+				"m-uid":"78706",
+				"type":"Member"
+			},
+			{
+				"username":"King_Scott",
+				"realname":"Scott",
+				"m-uid":"78711",
+				"type":"Member"
+			},
+			{
+				"username":"Old_Wang",
+				"realname":"蒟蒻",
+				"m-uid":"79075",
+				"type":"Member"
+			},
+			{
+				"username":"final_trump",
+				"realname":"暂无",
+				"m-uid":"81566",
+				"type":"Member"
+			}
+		],
+		"蒟蒻":[
+			{
+				"username":"A1443356159",
+				"realname":"蒟蒻",
+				"m-uid":"79065",
+				"type":"Member"
+			},
+			{
+				"username":"dottle",
+				"realname":"蒟蒻",
+				"m-uid":"79067",
+				"type":"Operator"
+			},
+			{
+				"username":"0AND1STORY",
+				"realname":"蒟蒻",
+				"m-uid":"79076",
+				"type":"Member"
+			}
+		],
+		"神蒟蒻":[
+			{
+				"username":"Orz_Deng",
+				"realname":"超·蒟蒻",
+				"m-uid":"92065",
+				"type":"Member"
+			}
+		],
+		"超级蒟蒻":[
+			{
+				"username":"Social_Zhao",
+				"realname":"蒟蒻",
+				"m-uid":"92254",
+				"type":"Member"
+			}
+		]
+	}
+}

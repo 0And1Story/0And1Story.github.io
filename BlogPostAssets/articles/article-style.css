@@ -48,6 +48,60 @@ button:focus {
 	font-weight: 400;
 	font-size: 120%;
 }
+#content #mainContent #article h2, h3, h4 {
+	padding-left: 2%;
+}
+#content #mainContent #article a {
+	color: rgba(15,120,217,1.00);
+}
+#content #mainContent #article a:hover {
+	text-decoration: none;
+}
+#content #mainContent #article h3 {
+	transition: 0.5s;
+	display: inline;
+}
+#content #mainContent #article h3:hover {
+	color: rgba(48,177,188,1.00);
+}
+#content #mainContent #article h4 {
+	color: rgba(86,51,203,1.00);
+}
+.team-member {
+	display: inline-block;
+	padding-left: 2%;
+	text-align: center;
+	transition: 0.3s;
+}
+.team-member:hover {
+	transform: translate(0px, -5px);
+}
+.team-member:hover .team-username {
+	box-shadow: 5px 5px 5px gray;
+}
+.team-member:hover .team-realname {
+	box-shadow: 5px 5px 5px gray;
+}
+.team-username {
+	background-color: rgba(54,173,231,1.00);
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 1px 1px 5px gray;
+	width: 110%;
+	transition: 0.3s;
+}
+.team-realname {
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 1px 1px 5px gray;
+	width: 110%;
+	transition: 0.3s;
+}
+.team-operator {
+	background-color: rgba(227,79,102,1.00);
+}
 
 
 /* 文章列表版面设置 */
@@ -66,8 +120,14 @@ button:focus {
 #content #mainContent #article-list aside {
 	background-color: rgba(255,255,255,0.70);
 }
-#content #mainContent #article-list aside p {
+#content #mainContent #article-list aside p, a {
 	color: rgba(22,86,185,1.00);
+	font-weight: bold;
+	transition: 0.5s;
+}
+#content #mainContent #article-list aside a:hover {
+	color: rgba(42,204,212,1.00);
+	text-decoration: none;
 }
 #content #mainContent #article-list aside h3,
 #content #mainContent #article-list aside p {
