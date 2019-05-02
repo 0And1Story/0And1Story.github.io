@@ -122,6 +122,10 @@ header:hover nav a {
 	width: 100%;
 	background-color: rgba(208,207,207,0.00);
 	overflow: hidden;
+<<<<<<< HEAD
+=======
+	border-radius: 5px;
+>>>>>>> b30f97c658bfa38344be6dac12a281be990d2c20
 }
 #content #mainContent #bannerImage img {
 	border-radius: 5px;
@@ -225,9 +229,12 @@ footer article h3 {
 	border-radius: 10px;
 	transition: 0.5s;
 }
+<<<<<<< HEAD
 #content #sidebar #adimage img:hover {
 	transform: scale(1.10,1.10);
 }
+=======
+>>>>>>> b30f97c658bfa38344be6dac12a281be990d2c20
 nav ul li {
 	list-style-type: none;
 	padding-top: 8px;
@@ -337,6 +344,12 @@ footer {
 	width: 100%;
 	float: left;
 	transition: 0.5s;
+<<<<<<< HEAD
+=======
+}
+#sidebar #adimage img:hover {
+	transform: scale(1.1, 1.1);
+>>>>>>> b30f97c658bfa38344be6dac12a281be990d2c20
 }
 .scroll-line {
 	height: 3px;
