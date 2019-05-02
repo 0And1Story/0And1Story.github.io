@@ -121,13 +121,14 @@ header:hover nav a {
 	/*Container for main banner image */
 	width: 100%;
 	background-color: rgba(208,207,207,0.00);
+	overflow: hidden;
 }
 #content #mainContent #bannerImage img {
 	border-radius: 5px;
 	transition: 0.5s;
 }
 #content #mainContent #bannerImage img:hover {
-	transform: scale(1.02,1.02);
+	transform: scale(1.10,1.10);
 }
 #content #mainContent p {
 	/* All paragraphs under maincontent */
@@ -220,12 +221,12 @@ footer article h3 {
 	background-color: rgba(208,207,207,0.00);
 	margin-top: 46px;
 	float: none;
-	overflow: auto;
+	overflow: hidden;
 	border-radius: 10px;
 	transition: 0.5s;
 }
-#content #sidebar #adimage:hover {
-	transform: scale(1.02,1.02);
+#content #sidebar #adimage img:hover {
+	transform: scale(1.10,1.10);
 }
 nav ul li {
 	list-style-type: none;
@@ -335,6 +336,7 @@ footer {
 	/* Image in sidebar */
 	width: 100%;
 	float: left;
+	transition: 0.5s;
 }
 .scroll-line {
 	height: 3px;

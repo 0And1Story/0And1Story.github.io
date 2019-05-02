@@ -9,6 +9,7 @@ Sidebar starts here. It contains a searchbox, sample ad image and 6 links\
 	<ul>\
 	  <li><a href="BlogPostAssets/articles/jiu-jiu-sheng-fa-biao.html" title="jiu-jiu-sheng-fa-biao">九九乘法表</a></li>\
 	  <li><a href="BlogPostAssets/articles/fast-io.html" title="fast-io">快读</a></li>\
+	  <li><a href="BlogPostAssets/articles/zheng-ze-biao-da-shi.html" title="regular-expression">正则表达式详解</a></li>\
 	</ul>\
   </nav>\
 </section>');
