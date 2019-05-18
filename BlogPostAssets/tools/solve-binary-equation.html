@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九九乘法表 - 0And1Story Blog</title>
+<script src="../js/includes.js"></script>
+<link rel="stylesheet" href="../articles/article-style.css">
+</head>
+
+<body>
+<div id="mainwrapper">
+  <header> 
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 3 navigation links. 
+    ****************************************************************************-->
+    <div id="logo"><!-- <img src="logoImage.png" alt="sample logo"> --><!-- Company Logo text --><a href="../../index.html">0And1Story</a></div>
+    <script src="../js/header-popup.js"></script>
+  </header>
+  <div id="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <input type="text" placeholder="搜索文章">
+    </div>
+    <section id="mainContent"> 
+      <!--************************************************************************
+    Main Blog content starts here
+    ****************************************************************************-->
+      <h1><!-- Blog title -->二元一次方程</h1>
+      <h3><!-- Tagline -->小工具系列</h3>
+      <div id="bannerImage"></div>
+	  <style>
+		  #article input {
+			  width: 40px;
+		  }
+		  #article #update-button {
+			  width: auto !important;
+		  }
+	  </style>
+      <aside id="article">
+		<br>
+        <p class="h1">求解二元一次方程：</p>
+		<p>\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}=1\)</p>
+		<p>
+		  <input type="number" id="num_2" onChange="update_solve()" onKeyup="update_solve()">&nbsp;\(x^2\)+
+		  <input type="number" id="num_1" onChange="update_solve()" onKeyup="update_solve()">&nbsp;\(x\)+
+		  <input type="number" id="num_0" onChange="update_solve()" onKeyup="update_solve()">&nbsp;\(=0\)
+		  <input type="button" id="update-button" onClick="update_solve()" value="求解">
+		</p>
+		<p id="solve"></p>
+		<script>
+		  function update_solve() {
+			  var a = document.getElementById('num_2').value, 
+				  b = document.getElementById('num_1').value, 
+				  c = document.getElementById('num_0').value;
+			  var solve = document.getElementById('solve');
+			  if (a == '') a = 1;
+			  if (b == '') b = 1;
+			  if (c == '') c = 0;
+			  if (a == '-') a = -1;
+			  if (b == '-') b = -1;
+			  delta = b*b - 2*a*c;
+			  solve.innerHTML = '解：<br>' + 
+				  '<span class="MathJax_Preview" style="color: inherit;"><span class="MJXp-math" id="MJXp-Span-1"><span class="MJXp-mi MJXp-italic" id="MJXp-Span-2">a</span><span class="MJXp-mo" id="MJXp-Span-3" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mn" id="MJXp-Span-4">' + a + '</span><span class="MJXp-mo" id="MJXp-Span-5" style="margin-left: 0em; margin-right: 0.222em;">,</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-6">b</span><span class="MJXp-mo" id="MJXp-Span-7" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mn" id="MJXp-Span-8">' + b + '</span><span class="MJXp-mo" id="MJXp-Span-9" style="margin-left: 0em; margin-right: 0.222em;">,</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-10">c</span><span class="MJXp-mo" id="MJXp-Span-11" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mn" id="MJXp-Span-12">' + c + '</span></span></span><br>' + 
+				  '<span class="MathJax_Preview" style="color: inherit;"><span class="MJXp-math" id="MJXp-Span-1"><span class="MJXp-mi" id="MJXp-Span-2">Δ</span><span class="MJXp-mo" id="MJXp-Span-3" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-msubsup" id="MJXp-Span-4"><span class="MJXp-mi MJXp-italic" id="MJXp-Span-5" style="margin-right: 0.05em;">b</span><span class="MJXp-mn MJXp-script" id="MJXp-Span-6" style="vertical-align: 0.5em;">2</span></span><span class="MJXp-mo" id="MJXp-Span-7" style="margin-left: 0.267em; margin-right: 0.267em;">−</span><span class="MJXp-mn" id="MJXp-Span-8">2</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-9">ac</span><span class="MJXp-mo" id="MJXp-Span-10" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mn" id="MJXp-Span-11">' + delta + '</span><span class="MJXp-mo" id="MJXp-Span-12" style="margin-left: 0.333em; margin-right: 0.333em;">' + (delta == 0 ? '=' : (delta > 0 ? '>' : '<')) + '</span><span class="MJXp-mn" id="MJXp-Span-13">0</span></span></span><br>' + 
+				  (delta < 0 ? '方程无实数根' : (delta > 0 ? '<span class="MathJax_Preview" style="color: inherit;"><span class="MJXp-math" id="MJXp-Span-1"><span class="MJXp-mi MJXp-italic" id="MJXp-Span-2">x</span><span class="MJXp-mo" id="MJXp-Span-3" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mfrac" id="MJXp-Span-4" style="vertical-align: 0.25em;"><span class="MJXp-box MJXp-script"><span class="MJXp-mo" id="MJXp-Span-5">−</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-6">b</span><span class="MJXp-mo" id="MJXp-Span-7">±</span><span class="MJXp-msqrt" id="MJXp-Span-8"><span class="MJXp-surd"><span class="MJXp-right MJXp-scale10" style="font-size: 166%; margin-top: 0.084em; margin-left: 0em;">√</span></span><span class="MJXp-root"><span class="MJXp-rule" style="border-top: 0.08em solid;"></span><span class="MJXp-box"><span class="MJXp-msubsup" id="MJXp-Span-9"><span class="MJXp-mi MJXp-italic" id="MJXp-Span-10" style="margin-right: 0.05em;">b</span><span class="MJXp-mn MJXp-script" id="MJXp-Span-11" style="vertical-align: 0.5em;">2</span></span><span class="MJXp-mo" id="MJXp-Span-12">−</span><span class="MJXp-mn" id="MJXp-Span-13">4</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-14">a</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-15">c</span></span></span></span></span><span class="MJXp-box" style="margin-top: -0.9em;"><span class="MJXp-denom"><span><span class="MJXp-rule" style="height: 1em; border-top: none; border-bottom: 1px solid; margin: 0.1em 0px;"></span></span><span><span class="MJXp-box MJXp-script"><span class="MJXp-mn" id="MJXp-Span-16">2</span><span class="MJXp-mi MJXp-italic" id="MJXp-Span-17">a</span></span></span></span></span></span><span class="MJXp-mo" id="MJXp-Span-18" style="margin-left: 0.333em; margin-right: 0.333em;">=</span><span class="MJXp-mn" id="MJXp-Span-19">' + ((-b+Math.sqrt(b*b-4*a*c))/(2*a)) + '或' + ((-b-Math.sqrt(b*b-4*a*c))/(2*a)) + '</span></span></span>' : ''));
+			  //console.log('2:'+a+' 1:'+b+' 0:'+c);
+		  }
+		</script>
+		<br>
+      </aside>
+      <script src="../js/author-info.js"></script>
+    </section>
+    <script src="../js/sidebar.js"></script>
+	<section id="hitokoto"></section>
+    <footer> 
+      <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+      <article>
+        <h3>Footer1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article>
+        <h3>Footer2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+    </footer>
+  </div>
+  <script src="../js/footerbar.js"></script>
+</div>
+<script src="https://highlightjs.org/static/highlight.site.pack.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
