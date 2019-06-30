@@ -3,6 +3,7 @@ document.write('\
       <div class="popup-button">\
         <i class="fas fa-link"></i>&nbsp;友链<br><i class="fas fa-angle-down"></i>\
         <a href="https://dottlewither.github.io/" target="_blank"><div class="popup-item">Dottle</div></a>\
+        <a href="https://socialzxy.github.io/socialzhao/" target="_blank"><div class="popup-item">Social Zhao</div></a>\
       </div>\
       <div class="popup-button">\
         <i class="fas fa-info-circle"></i>&nbsp;关于<br><i class="fas fa-angle-down"></i>\
