@@ -67,6 +67,12 @@ button:focus {
 #content #mainContent #article h4 {
 	color: rgba(86,51,203,1.00);
 }
+#content #mainContent #article a:hover {
+	color: rgba(45,183,139,1.00);
+}
+#mainwrapper #content #sidebar {
+	margin-top: 170px;
+}
 .team-member {
 	display: inline-block;
 	padding-left: 2%;
@@ -220,4 +226,14 @@ button:focus {
 }
 .lightblue {
 	color: rgba(15,120,217,1.00) !important;
+}
+
+/* 仿照萌娘百科的黑幕效果 */
+.heimu {
+	background-color: black;
+	color: black;
+	transition: 0.3s;
+}
+.heimu:hover {
+	color: white;
 }

@@ -11,14 +11,14 @@
 			"Description": "Ad Image",
 			"Format": "JPEG",
 			"Position": "#sidebar",
-			"URL": "https://s2.ax1x.com/2019/03/09/ApuQds.jpg",
+			"URL": "https://s2.ax1x.com/2019/07/11/Z25iLt.jpg",
 			"LocalPath": "BlogPostAssets/images/adimage.jpg"
 		},
 		"banner_image": {
 			"Description": "Banner Image",
 			"Format": "PNG",
 			"Position": "#bannerImage",
-			"URL": "https://s2.ax1x.com/2019/03/09/ApZa5V.png",
+			"URL": "https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302",
 			"LocalPath": "BlogPostAssets/images/banner_image.png"
 		}
 	}

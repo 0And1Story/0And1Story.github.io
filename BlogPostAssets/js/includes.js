@@ -9,6 +9,7 @@ function include_modules() {
 		<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/atom-one-light.css">\
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>\
 		<script src="../js/copy-code.js" async></script>\
+		<script src="../js/heimu.js" async></script>\
 		<script src="../js/hitokoto.js" async></script>\
 		<script src="../js/scroll-line.js" async></script>\
 		<script src="../js/window-onload.js" async></script>\
