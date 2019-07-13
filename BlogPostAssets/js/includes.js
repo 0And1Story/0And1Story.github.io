@@ -7,8 +7,10 @@ function include_modules() {
 		<link rel="shortcut icon" href="../images/favicon.ico">\
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">\
 		<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/atom-one-light.css">\
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>\
+		<script src="../js/mathjax.js" async></script>\
 		<script src="../js/copy-code.js" async></script>\
+		<script src="https://highlightjs.org/static/highlight.site.pack.js"></script>\
+		<script>hljs.initHighlightingOnLoad();</script>\
 		<script src="../js/heimu.js" async></script>\
 		<script src="../js/hitokoto.js" async></script>\
 		<script src="../js/scroll-line.js" async></script>\

@@ -353,6 +353,16 @@ footer {
 	transition: 1.0s;
 }
 
+/* Laptop view */
+@media screen and (max-width: 1367px) {
+#hitokoto .hitokoto-title {
+	font-size: 125%;
+}
+#hitokoto .hitokoto-text {
+	text-align: center;
+}
+}
+
 /* Tablet view */
 @media screen and (max-width:769px) {
 .notOnDesktop {

@@ -3,4 +3,5 @@ window.onload = function() {
 	initScrollLine();
 	initHitokoto();
 	initHeimu();
+	initMathjax();
 };
