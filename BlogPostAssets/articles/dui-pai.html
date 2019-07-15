@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>对拍模板 - 0And1Story Blog</title>
+<script src="../js/includes.js"></script>
+</head>
+
+<body>
+<div id="mainwrapper">
+  <header> 
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 3 navigation links. 
+    ****************************************************************************-->
+    <div id="logo"><!-- <img src="logoImage.png" alt="sample logo"> --><!-- Company Logo text --><a href="../../index.html">0And1Story</a></div>
+    <script src="../js/header-popup.js"></script>
+  </header>
+  <div id="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <input type="text" placeholder="搜索文章">
+    </div>
+    <section id="mainContent"> 
+      <!--************************************************************************
+    Main Blog content starts here
+    ****************************************************************************-->
+      <h1><!-- Blog title --> 对拍模板</h1>
+      <h3><!-- Tagline -->对拍</h3>
+      <div id="bannerImage"></div>
+      <aside id="article">
+        <p><br>
+        </p>
+<p>对拍是一个做题的技巧，有时自己的程序WA了，而由于版权原因<span class="heimu">(一些奇奇怪怪的原因)</span>导致无法下载测试数据，无法很方便地找到自己的错误，此时就可以将自己的程序和别人的正解或自己打的暴力算法进行对拍，从而可以找到自己错的测试数据来调试。</p>
+<p>今天就写了一个不错的<span class="bold lightblue h2">对拍模板</span>，跟大家分享。</p>
+<p>代码如下：</p>
+<pre>
+<button class="copy-button"></button>
+<code class="cpp">
+#include &lt;cstdio&gt;
+#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
+#include &lt;windows.h&gt;
+
+using namespace std;
+
+#define init_rand srand(time(NULL));
+#define LPFILE FILE*
+#define infile(name) fopen(name, "w");
+#define for(x, l, r) for(int x = l; x &lt;= r; x ++)
+
+inline int rand(register int l, register int r) {
+    return rand() % (r-l+1) + l;
+}
+
+inline double rand_double() {
+    return (double)rand() / RAND_MAX;
+}
+
+int main()
+{
+    init_rand
+    while (true)
+    {
+        LPFILE fin = infile("test.in")
+        int n = rand(1, 1000);
+        fprintf(fin, "%d\n", n);
+        for (i, 1, n)
+            fprintf(fin, "%d ", rand(1,5000));
+        fprintf(fin, "\n");
+        fclose(fin);
+        system("type test.in");
+        system("my.exe &lt; test.in &gt; my.out");
+        system("right.exe &lt; test.in &gt; right.out");
+        if (system("fc my.out right.out"))
+            MessageBox(NULL, "找到差异，请查看！", "找到差异", MB_OK | MB_ICONER
+ROR),
+            system("pause");
+    }
+    return 0;
+}
+</code>
+</pre>
+        <p><br>
+        </p>
+      </aside>
+      <script src="../js/author-info.js"></script>
+    </section>
+    <script src="../js/sidebar.js"></script>
+	<section id="hitokoto"></section>
+    <footer> 
+      <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+      <article>
+        <h3>Footer1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article>
+        <h3>Footer2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+    </footer>
+  </div>
+  <script src="../js/footerbar.js"></script>
+</div>
+</body>
+</html>
