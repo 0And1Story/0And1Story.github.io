@@ -109,6 +109,12 @@ button:focus {
 .team-operator {
 	background-color: rgba(227,79,102,1.00);
 }
+/* Tablet View */
+@media screen and (max-width: 769px) {
+#mainwrapper #content #sidebar {
+	margin-top: 3px;
+}
+}
 
 
 /* 文章列表版面设置 */
