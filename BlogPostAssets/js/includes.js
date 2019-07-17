@@ -14,6 +14,7 @@ function include_modules() {
 		<script src="../js/heimu.js" async></script>\
 		<script src="../js/hitokoto.js" async></script>\
 		<script src="../js/scroll-line.js" async></script>\
+		<script src="../js/utterances.js" async></script>\
 		<script src="../js/window-onload.js" async></script>\
 		<textarea id="copy-buffer" style="opacity: 0;width: 0px;height: 0px;"></textarea>\
 	');
