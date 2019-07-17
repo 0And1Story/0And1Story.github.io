@@ -12,5 +12,5 @@ function initUtterances() {
     style.href = 'https://0and1story.github.io/BlogPostAssets/styles/utterances.css';
     style.rel = 'stylesheet';
     style.type = 'text/css';
-    document.getElementById('utterances-frame').document.head.appendChild(style);
+    document.getElementsByClassName('utterances-frame')[0].document.head.appendChild(style);
 }
