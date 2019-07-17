@@ -8,4 +8,9 @@ function initUtterances() {
     utterances.crossorigin = 'anonymous';
     utterances.async = true;
     mainContent.appendChild(utterances);
+    let style = document.createElement('link');
+    style.href = 'https://0and1story.github.io/BlogPostAssets/styles/utterances.css';
+    style.rel = 'stylesheet';
+    style.type = 'text/css';
+    document.getElementById('utterances-frame').document.head.appendChild(style);
 }

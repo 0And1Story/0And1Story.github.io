@@ -148,64 +148,6 @@ button:focus {
 }
 
 
-/* Utterances评论区设置 */
-/* timeline设置 */
-.timeline .timeline-header {
-	color: rgba(255, 255, 255, 1.00);
-}
-.timeline .timeline-header .text-link {
-	color: rgba(255, 255, 255, 1.00);
-	transition: 0.3s;
-}
-.timeline .timeline-header .text-link:hover {
-	color: rgba(15,120,217,1.00);
-}
-/* comment设置 */
-.timeline-comment .comment {
-	background-color: rgba(255, 255, 255, 0.00);
-}
-/* header设置 */
-.new-comment-header {
-	background: rgba(255, 255, 255, 0.00);
-}
-/* tabnav设置 */
-.tabnav-tabs .tabnav-tab {
-	background-color: rgba(255, 255, 255, 0.00);
-	color: rgba(255, 255, 255, 1.00);
-	outline: none;
-	transition: 0.3s;
-}
-.tabnav-tabs .tabnav-tab:hover {
-	color: rgba(255, 255, 255, 1.00);
-}
-.tabnav-tabs .tabnav-tab[aria-selected="true"] {
-	color: rgba(255, 255, 255, 1.00);
-}
-.tabnav-tabs .tabnav-tab[aria-selected="false"] {
-	color: rgba(255, 255, 255, 0.50);
-}
-/* comment-body设置 */
-.comment-body .form-control {
-	color: rgba(255, 255, 255, 0.90);
-}
-.comment-body .markdown-body {
-	background-color: rgba(255, 255, 255, 0.90);
-}
-/* comment button设置 */
-.btn-primary {
-	background-color: rgba(52, 214, 89, 0.80);
-	background-image: none;
-	transition: 0.3s;
-}
-.btn-primary:hover {
-	background-color: rgba(62, 255, 107, 1.00);
-	background-image: none;
-}
-.btn-primary:disabled {
-	background-color: rgba(148, 211, 162, 0.6);
-}
-
-
 /* 使用类似markdown的html格式对象 */
 /* 6种标题 */
 .h1 {
