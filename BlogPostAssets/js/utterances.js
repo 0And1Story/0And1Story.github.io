@@ -8,7 +8,6 @@ function initUtterances() {
     utterances.setAttribute('theme', 'github-light');
     utterances.crossorigin = 'anonymous';
     mainContent.insertBefore(utterances, authorInfo);
-    if (document.getElementsByClassName('utterances').length == 0) return;
     utterances = document.getElementsByClassName('utterances')[0];
     utterances.classList.add('element');
     utterances.outerHTML +=
