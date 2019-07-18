@@ -1,4 +1,5 @@
 function initUtterances() {
+    let mainContent = document.getElementById('mainContent');
     let authorInfo = document.getElementById('authorInfo');
     let utterances = document.createElement('script');
     utterances.src = 'https://utteranc.es/client.js';
@@ -7,5 +8,5 @@ function initUtterances() {
     utterances.setAttribute('theme', 'github-light');
     utterances.crossorigin = 'anonymous';
     utterances.async = true;
-    authorInfo.insertBefore(utterances);
+    mainContent.insertBefore(utterances, authorInfo);
 }
