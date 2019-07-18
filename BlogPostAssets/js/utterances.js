@@ -10,7 +10,7 @@ function initUtterances() {
     utterances.async = true;
     mainContent.insertBefore(utterances, authorInfo);
     if (document.getElementsByClassName('utterances').length == 0) return;
-    let utterances = document.getElementsByClassName('utterances')[0];
+    utterances = document.getElementsByClassName('utterances')[0];
     utterances.classList.add('element');
     utterances.outerHTML +=
     '.folder input[type="checkbox"]:checked ~ .element {' +
