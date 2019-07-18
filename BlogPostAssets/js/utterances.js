@@ -7,6 +7,7 @@ function initUtterances() {
     utterances.setAttribute('issue-term', 'pathname');
     utterances.setAttribute('theme', 'github-light');
     utterances.crossorigin = 'anonymous';
+    utterances.async = true;
     mainContent.insertBefore(utterances, authorInfo);
     utterances = document.getElementsByClassName('utterances')[0];
     utterances.classList.add('element');
