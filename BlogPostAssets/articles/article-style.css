@@ -245,3 +245,42 @@ button:focus {
 .heimu:hover {
 	color: white;
 }
+
+
+/* 评论设置 */
+#comment h1 {
+	font-size: 32px;
+	color: white !important;
+	display: inline-block;
+}
+.folder input[type="checkbox"] {
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+.folder .expand, .collapse {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: bold;
+	text-decoration: underline;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.folder .expand:hover, .collapse:hover {
+	color: rgba(255,255,255,1.00);
+}
+.folder .expand {
+	display: inline-block;
+}
+.folder .collapse {
+	display: none;
+}
+.folder input[type="checkbox"]:checked ~ .expand {
+	display: none;
+}
+.folder input[type="checkbox"]:checked ~ .collapse {
+	display: inline-block;
+}
+.folder .element {
+	max-height: 0px;
+	transition: 0.5s;
+	overflow: hidden;
+}
