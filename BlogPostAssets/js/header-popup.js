@@ -10,6 +10,7 @@ document.write('\
         <a href="before-start.html" title="关于此博客"><div class="popup-item">在开始之前</div></a>\
         <a href="thanks.html" title="感谢"><div class="popup-item">感谢&nbsp;<i class="fas fa-heart"></i></div></a>\
         <a href="#" title="大佬"><div class="popup-item">大佬&nbsp;<i class="fas fa-user-friends"></i></div></a>\
+        <a href="comment.html" title="评论"><div class="popup-item">留言板&nbsp;<i class="fas fa-comments"></i></div></a>\
         <a href="https://www.luogu.org/blog/0AND1STORY/" title="洛谷博客" target="_blank"><div class="popup-item">Luogu</div></a>\
         <a href="https://github.com/0And1Story" title="GitHub" target="_blank"><div class="popup-item">GitHub&nbsp;<i class="fab fa-github"></i></div></a>\
       </div>\

@@ -9,6 +9,7 @@ function initUtterances() {
     utterances.crossorigin = 'anonymous';
     utterances.async = true;
     mainContent.insertBefore(utterances, authorInfo);
+    /*
     utterances = document.getElementsByClassName('utterances')[0];
     utterances.classList.add('element');
     utterances.outerHTML +=
@@ -23,4 +24,5 @@ function initUtterances() {
     '<label for="check" class="collapse">收起</label>' +
     utterances.outerHTML +
     '</div>';
+    */
 }
